@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Chat Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="bg-toggle-btn" onclick="changeBackground()">Change Wallpaper</button>
+  <button id="clear-btn" onclick="clearMessages()">Clear All Messages</button>
+
+  <h2>WeChat</h2>
+  <p id="app-quote">"More than messages ,<br>memories .."</p>
+
+  <input type="text" id="username" placeholder="Enter your name" autocomplete="off">
+
+  <div id="chat-box"></div>
+
+  <div id="input-container">
+    <input type="text" id="message" placeholder="Type a message" autocomplete="off">
+    <button id="send-btn" onclick="sendMessage()">➤</button>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
